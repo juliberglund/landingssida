@@ -112,7 +112,7 @@ section {
 }
 
 .info h2 {
-  margin-bottom: 10%;
+  margin-bottom: 2%;
 }
 
 .info h3 {
@@ -146,40 +146,53 @@ section {
   }
   section {
     flex-direction: column;
-    .wrapper {
-      grid-template-columns: 1fr;
-    }
+    align-items: flex-start;
   }
 
   .image-first {
-    margin-right: 0;
+    margin-left: 60px;
     margin-bottom: 20px;
-  }
-  .wrapper {
-    grid-template-columns: 1fr;
   }
 
   .wrapper img {
     height: 200px;
   }
 
-  footer {
-    display: flex;
+  .cta {
     flex-direction: column;
     align-items: center;
-    justify-content: center;
   }
 
-  .footer_nav,
+  footer {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .footer_nav {
+    width: 100%;
+    text-align: center;
+    margin-bottom: 20px;
+  }
   .contact {
     width: 100%;
     text-align: center;
     margin-bottom: 20px;
   }
 
-  .footerlogo {
-    width: 65%;
+  .contact h2,
+  .contact .mail,
+  .contact .infoschool {
     text-align: center;
+  }
+
+  .footerlogo {
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .footerlogo img {
+    margin: 0 auto;
+    display: block;
   }
 }
 .rekomendation {
@@ -220,13 +233,16 @@ section {
   margin-bottom: 10%;
 }
 
+.cta p {
+  padding: 5px;
+}
+
 h1 {
   margin-bottom: 20px;
   font-family: "Playwrite DE Grund", system-ui;
 }
 
 p {
-  margin-bottom: 20px;
   font-family: "Playwrite DE Grund", system-ui;
 }
 
@@ -239,9 +255,13 @@ p {
   font-family: "Playwrite DE Grund", system-ui;
 }
 
+.contact h2 {
+  padding-bottom: 20px;
+  font-family: "Playwrite DE Grund", system-ui;
+}
+
 footer {
   display: flex;
-  align-items: flex-start;
   height: 20%;
 }
 
@@ -264,15 +284,17 @@ footer {
 
 .contact {
   flex: 1;
-  text-align: center;
-  justify-content: space-between;
+  text-align: left;
 }
 
 .footerlogo {
-  text-align: right;
-  margin-top: 5%;
+  text-align: -webkit-right;
+  margin-top: 2%;
 }
 
 .footerlogo img {
   max-width: 150px;
+}
+.mail {
+  margin-bottom: 45px;
 }
