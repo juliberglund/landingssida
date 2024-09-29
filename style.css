@@ -95,6 +95,13 @@ section {
   padding: 20px;
 }
 
+.info h2 {
+  margin-bottom: 2%;
+}
+
+.info h3 {
+  margin-bottom: 5%;
+}
 .image-first {
   flex: 1;
   margin-right: 20px;
@@ -111,13 +118,6 @@ section {
   margin-left: 20%;
 }
 
-.info h2 {
-  margin-bottom: 2%;
-}
-
-.info h3 {
-  margin-bottom: 5%;
-}
 /* --------------------------------------------Media Screen-------------------------------------------------- */
 @media screen and (max-width: 768px) {
   .nav-container {
@@ -218,16 +218,37 @@ section {
   width: 100%;
 }
 
-.wrapper img {
+.wrapper {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
   width: 100%;
-  object-fit: cover;
+}
+
+.wrapper > div {
+  position: relative;
   height: 300px;
 }
 
+.wrapper img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
 .wrapper p {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  margin: 0;
+  padding: 10px;
   font-size: 16px;
   font-family: "Playwrite DE Grund", system-ui;
 }
+
 .cta {
   flex-direction: column;
   margin-bottom: 10%;
