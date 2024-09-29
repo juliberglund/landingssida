@@ -33,8 +33,6 @@ li {
   display: block;
   color: rgb(9, 5, 5);
   text-align: center;
-  padding: 16px;
-  display: block;
 }
 .nav-container {
   display: flex;
@@ -241,10 +239,10 @@ section {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: rgba(0, 0, 0, 0.5);
+  background-color: rgba(0, 0, 0, 0.348);
   color: white;
   margin: 0;
-  padding: 10px;
+  padding: 8px;
   font-size: 16px;
   font-family: "Playwrite DE Grund", system-ui;
 }
@@ -303,6 +301,17 @@ footer {
   font-family: "Playwrite DE Grund", system-ui;
 }
 
+.footer_nav a {
+  text-decoration: none;
+  color: inherit;
+  display: inline-block;
+  transition: color 0.3s ease;
+}
+
+.footer_nav a:hover {
+  color: #007bff; /* Eller valfri accentfärg */
+}
+
 .contact {
   flex: 1;
   text-align: left;
@@ -310,7 +319,7 @@ footer {
 
 .footerlogo {
   text-align: -webkit-right;
-  margin-top: 2%;
+  margin-top: 4%;
 }
 
 .footerlogo img {
